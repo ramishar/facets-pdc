@@ -1,0 +1,239 @@
+#about {
+ font-size: 2.8rem;
+ text-align: center;
+ color: #D2B48C;
+ margin-top: 1.4rem;
+ padding: 30px;
+}
+
+/* Programs styles */
+section {
+  padding: 30px;
+}
+
+#coaching {
+  text-align: center;
+}
+
+#coaching ul{
+  display: inline-block;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+#management-hr{
+  margin-left: 10rem;
+  font-size: 1.3rem;
+}
+
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #556B2F;
+}
+
+section ul {
+  margin-left: 60px;
+}
+
+section li {
+  margin-bottom: 10px;
+}
+
+/* Two-Column Layout */
+.section-columns {
+  display: flex;
+}
+
+.section-columns > div {
+  flex: 1;
+}
+
+/* Contact Styles */
+.contact .content {
+    /* max-width: 800px; */
+    text-align: center;
+    padding-top: 2rem;
+  }
+  
+  .contact .content h2 {
+    font-size: 2.6rem;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    color: #556B2F;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  
+  .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+  }
+  
+  .c_icon {
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    background: #D2B48C;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    margin-right: 20px;
+  }
+  
+  .contactInfo .box .text {
+    width: calc(100% - 50px);
+    /* display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300; */
+  }
+  
+  .container .contactInfo .box .text h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #D2B48C;
+    margin-bottom: 5px;
+  }
+  
+  .contactForm {
+    width: 40%;
+    margin-bottom: 50px;
+  }
+  
+  .contactForm h2, h3 {
+    color: #556B2F;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
+  .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .inputBox input,
+  .inputBox textarea {
+    width: 100%;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #D2B48C;
+    background: transparent;
+    outline: none;
+    resize: none;
+  }
+  
+  .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 6px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    margin: 17px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+  }
+  
+  .inputBox input:focus ~ span,
+  .inputBox input:valid ~ span,
+  .inputBox textarea:focus ~ span,
+  .inputBox textarea:valid ~ span {
+    color: #D2B48C;
+    font-size: 14px;
+    transform: translateY(-28px);
+  }
+  
+  .inputBox input[type="submit"] {
+    width: 100%;
+    background: #D2B48C;
+    color: black;
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  @media only screen and (max-width: 428px) {
+    .container {
+      flex-direction: column;
+    }
+    .contactForm {
+      margin-top: 25px;
+      margin-bottom: 35px;
+    }
+    .contact .content h2{
+      font-size: 1.8rem;
+    }
+    .c_icon {
+      min-width: 30px;
+      border-radius: 90%;
+    }
+    .c_text {
+      font-size: 14px;
+    }
+    .h3 {
+      font-size: 15px;
+    }
+    .contactForm h2, h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  /* Responsive styling */
+  @media screen and (max-width: 768px) {
+    #about{
+      font-size: 1.3rem;
+      padding: 10px;
+    }
+    section {
+      padding: 10px;
+    }
+    section h2{
+      font-size: 1.3rem;
+    }
+    #coaching ul{
+      font-size: 1rem;
+      margin-left: 10px;
+    }
+    
+    #management-hr{
+      margin-left: 20px;
+      font-size: 1rem;
+    }
+    #management-hr ul{
+      margin-left: 10px;
+
+    }
+    .section-columns {
+      display:block;
+    }
+    
+    /* .section-columns > div {
+      flex: 1;
+    } */
+  }
